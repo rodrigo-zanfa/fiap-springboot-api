@@ -4,11 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ea64abb-908c-4e83-950c-6ede9bc2ce67" name="Changes" comment="" />
+    <list default="true" id="be1482fd-30f3-4ae9-b516-b913c0856e92" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -19,11 +27,15 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2E6Rhlc7ccxiimHH1vm1PeXgkWN" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2E6LVQnhH5CzXIH4KnYzIJTPRyo" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,83 +49,106 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/ProjetosRodrigo/fiap-springboot-api"
+    "last_opened_file_path": "C:/ProjetosRodrigo/fiap-springboot-api/src/test",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "c06792dcb43ead2205eaef90c8fadc49"
   }
 }]]></component>
-  <component name="RunManager" selected="Maven.abctechapi [war:war]">
-    <configuration name="abctechapi [war:exploded]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="war:exploded" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/abctechapi" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\ProjetosRodrigo\fiap-springboot-api\src\test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AssistanceServiceTests">
+    <configuration name="AssistanceServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fiap-springboot-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.fiap.abctechapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.fiap.abctechapi.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.fiap.abctechapi.service.AssistanceServiceTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="abctechapi [war:war]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="war:war" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/abctechapi" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
+    <configuration name="AssistanceServiceTests.list_error" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fiap-springboot-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.fiap.abctechapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.fiap.abctechapi.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.fiap.abctechapi.service.AssistanceServiceTests" />
+      <option name="METHOD_NAME" value="list_error" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="ApiAbcTechServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="AssistanceServiceTests.list_success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fiap-springboot-api" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.fiap.abctechapi.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.fiap.abctechapi.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.fiap.abctechapi.service.AssistanceServiceTests" />
+      <option name="METHOD_NAME" value="list_success" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiAbcTechServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="fiap-springboot-api" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.fiap.abctechapi.ApiAbcTechServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiAbcTechServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="abctechapi" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="br.com.fiap.abctechapi.ApiAbcTechServiceApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.fiap.abctechapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Maven.abctechapi [war:war]" />
-        <item itemvalue="Maven.abctechapi [war:exploded]" />
+        <item itemvalue="JUnit.AssistanceServiceTests" />
+        <item itemvalue="JUnit.AssistanceServiceTests.list_error" />
+        <item itemvalue="JUnit.AssistanceServiceTests.list_success" />
+        <item itemvalue="Spring Boot.ApiAbcTechServiceApplication" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3ea64abb-908c-4e83-950c-6ede9bc2ce67" name="Changes" comment="" />
-      <created>1661914168800</created>
+      <changelist id="be1482fd-30f3-4ae9-b516-b913c0856e92" name="Changes" comment="" />
+      <created>1661911113502</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1661914168800</updated>
-      <workItem from="1661914170258" duration="3387000" />
+      <updated>1661911113502</updated>
+      <workItem from="1661911117477" duration="2792000" />
+      <workItem from="1661986984626" duration="9656000" />
     </task>
     <servers />
   </component>

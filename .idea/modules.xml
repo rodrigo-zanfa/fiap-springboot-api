@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/abctechapi/abctechapi.iml" filepath="$PROJECT_DIR$/abctechapi/abctechapi.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/fiap-springboot-api.iml" filepath="$PROJECT_DIR$/.idea/fiap-springboot-api.iml" />
     </modules>
   </component>
 </project>
