@@ -62,7 +62,7 @@
       <recent name="C:\ProjetosRodrigo\fiap-springboot-api\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AssistanceServiceTests">
+  <component name="RunManager" selected="Spring Boot.ApiAbcTechServiceApplication (1)">
     <configuration name="AssistanceServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fiap-springboot-api" />
       <extension name="coverage">
@@ -148,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661911113502</updated>
       <workItem from="1661911117477" duration="2792000" />
-      <workItem from="1661986984626" duration="10280000" />
+      <workItem from="1661986984626" duration="15546000" />
     </task>
     <servers />
   </component>
