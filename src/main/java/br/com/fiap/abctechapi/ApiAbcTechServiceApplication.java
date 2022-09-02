@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ApiAbcTechServiceApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ApiAbcTechServiceApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ApiAbcTechServiceApplication.class, args);
+    }
 
 }
