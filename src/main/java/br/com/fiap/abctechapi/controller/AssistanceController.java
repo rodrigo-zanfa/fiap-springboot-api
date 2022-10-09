@@ -13,17 +13,17 @@ import java.util.List;
 @RestController
 @RequestMapping("/assistance")
 public class AssistanceController {
-
-    private final AssistanceService service;
+    private final AssistanceService assistanceService;
 
     @Autowired
-    public AssistanceController(AssistanceService service) {
-        this.service = service;
+    public AssistanceController(AssistanceService assistanceService) {
+        this.assistanceService = assistanceService;
     }
 
     @GetMapping()
     public ResponseEntity<List<Assistance>> getAssists() {
-        List<Assistance> list = service.getAssistanceList();
+        List<Assistance> list = assistanceService.getAssistanceList();
+
         return ResponseEntity.ok(list);
     }
 }

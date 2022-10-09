@@ -17,14 +17,15 @@ import static org.mockito.Mockito.when;
 
 @SpringBootTest
 public class AssistanceServiceTests {
-
     @Mock
     private AssistanceRepository assistanceRepository;
+
     private AssistanceService assistanceService;
 
     @BeforeEach
     public void init() {
         MockitoAnnotations.openMocks(this);
+
         assistanceService = new AssistanceServiceImpl(assistanceRepository);
     }
 

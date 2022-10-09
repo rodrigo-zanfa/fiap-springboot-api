@@ -13,7 +13,6 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Order {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,7 +22,7 @@ public class Order {
 
     @ManyToMany
     @JoinTable(name = "orders_assistances", foreignKey = @ForeignKey(name = "FK_order_id"), joinColumns = @JoinColumn(name = "order_id"), inverseForeignKey = @ForeignKey(name = "FK_assistance_id"), inverseJoinColumns = @JoinColumn(name = "assistance_id"))
-    private List<Assistance> services;
+    private List<Assistance> assists;
 
     @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "start_order_location_id", foreignKey = @ForeignKey(name = "FK_start_order_location_id"))
@@ -32,4 +31,12 @@ public class Order {
     @OneToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "end_order_location_id", foreignKey = @ForeignKey(name = "FK_end_order_location_id"))
     private OrderLocation endOrderLocation;
+
+    public boolean hasMinAssists() {
+        return assists.size() > 0;
+    }
+
+    public boolean exceedsMaxAssists() {
+        return assists.size() > 15;
+    }
 }

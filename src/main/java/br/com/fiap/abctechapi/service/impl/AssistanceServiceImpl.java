@@ -10,16 +10,15 @@ import java.util.List;
 
 @Service
 public class AssistanceServiceImpl implements AssistanceService {
-
-    private final AssistanceRepository repository;
+    private final AssistanceRepository assistanceRepository;
 
     @Autowired
-    public AssistanceServiceImpl(AssistanceRepository repository) {
-        this.repository = repository;
+    public AssistanceServiceImpl(AssistanceRepository assistanceRepository) {
+        this.assistanceRepository = assistanceRepository;
     }
 
     @Override
     public List<Assistance> getAssistanceList() {
-        return repository.findAll();
+        return assistanceRepository.findAll();
     }
 }
