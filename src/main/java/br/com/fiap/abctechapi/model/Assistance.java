@@ -1,5 +1,6 @@
 package br.com.fiap.abctechapi.model;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,6 +13,7 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Assistance {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,4 +23,5 @@ public class Assistance {
 
     @Column(name = "description", nullable = false, length = 300)
     private String description;
+
 }

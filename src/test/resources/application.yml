@@ -1,7 +1,7 @@
 server:
   port: 8080
 
-build.name: abctech-api
+build.name: abc-tech-api
 build.version: "1.0"
 
 spring:
