@@ -1,9 +1,9 @@
 package br.com.fiap.abctechapi.application;
 
-import br.com.fiap.abctechapi.application.dto.AssistsDto;
+import br.com.fiap.abctechapi.application.dto.AssistDto;
 
 import java.util.List;
 
 public interface AssistanceApplication {
-    List<AssistsDto> getAssists();
+    List<AssistDto> getAssists();
 }

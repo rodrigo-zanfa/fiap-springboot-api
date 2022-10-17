@@ -1,7 +1,8 @@
 package br.com.fiap.abctechapi.handler;
 
-import br.com.fiap.abctechapi.handler.exception.MaxAssistsException;
-import br.com.fiap.abctechapi.handler.exception.MinimunAssistsRequiredException;
+
+import br.com.fiap.abctechapi.handler.expcetion.MaxAssistsException;
+import br.com.fiap.abctechapi.handler.expcetion.MinimumAssistRequiredException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
@@ -11,23 +12,24 @@ import java.util.Date;
 
 @ControllerAdvice
 public class ControllerExceptionHandler {
-    @ExceptionHandler(MinimunAssistsRequiredException.class)
-    public ResponseEntity<ErrorMessageResponse> errorMinAssistsRequired(MinimunAssistsRequiredException exception) {
-        return getErrorMessageResponseResponseEntity(HttpStatus.BAD_REQUEST, exception.getMessage(), exception.getDescription());
+
+
+    @ExceptionHandler(MinimumAssistRequiredException.class)
+    public ResponseEntity<ErrorMessageResponse> errorMinAssistRequired(MinimumAssistRequiredException exception){
+        return getErrorMessageResponseResponseEntity(exception.getMessage(), exception.getDescription(), HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(MaxAssistsException.class)
-    public ResponseEntity<ErrorMessageResponse> errorMaxAssistsException(MaxAssistsException exception) {
-        return getErrorMessageResponseResponseEntity(HttpStatus.BAD_REQUEST, exception.getMessage(), exception.getDescription());
+    public ResponseEntity<ErrorMessageResponse> errorMaxAssistException(MaxAssistsException exception){
+        return getErrorMessageResponseResponseEntity(exception.getMessage(), exception.getDescription(), HttpStatus.BAD_REQUEST);
     }
 
-    private ResponseEntity<ErrorMessageResponse> getErrorMessageResponseResponseEntity(HttpStatus statusCode, String message, String description) {
+    private ResponseEntity<ErrorMessageResponse> getErrorMessageResponseResponseEntity(String message, String description, HttpStatus statusCode ) {
         ErrorMessageResponse error = new ErrorMessageResponse();
-        error.setStatusCode(statusCode.value());
-        error.setTimestamp(new Date());
         error.setMessage(message);
         error.setDescription(description);
-
-        return new ResponseEntity<ErrorMessageResponse>(error, HttpStatus.BAD_REQUEST);
+        error.setTimestamp(new Date());
+        error.setStatusCode(statusCode.value());
+        return new ResponseEntity<ErrorMessageResponse>(error, statusCode);
     }
 }

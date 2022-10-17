@@ -8,5 +8,6 @@ import java.util.Date;
 public class OrderLocationDto {
     private Double latitude;
     private Double longitude;
-    private Date datetime;
+    private Date dateTime;
+
 }
