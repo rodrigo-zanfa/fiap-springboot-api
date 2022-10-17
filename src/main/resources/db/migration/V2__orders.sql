@@ -4,7 +4,7 @@ CREATE TABLE `order_location` (
   `latitude` double NOT NULL,
   `longitude` double NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 CREATE TABLE `orders` (
   `id` bigint NOT NULL AUTO_INCREMENT,
@@ -16,7 +16,7 @@ CREATE TABLE `orders` (
   KEY `FK_start_order_location_id` (`start_order_location_id`),
   CONSTRAINT `FK_end_order_location_id` FOREIGN KEY (`end_order_location_id`) REFERENCES `order_location` (`id`),
   CONSTRAINT `FK_start_order_location_id` FOREIGN KEY (`start_order_location_id`) REFERENCES `order_location` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 CREATE TABLE `orders_assistances` (
   `order_id` bigint NOT NULL,
@@ -25,4 +25,4 @@ CREATE TABLE `orders_assistances` (
   KEY `FK_order_id` (`order_id`),
   CONSTRAINT `FK_assistance_id` FOREIGN KEY (`assistance_id`) REFERENCES `assistances` (`id`),
   CONSTRAINT `FK_order_id` FOREIGN KEY (`order_id`) REFERENCES `orders` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);

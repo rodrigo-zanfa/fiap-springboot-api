@@ -3,7 +3,7 @@ CREATE TABLE `assistances` (
   `description` varchar(300) NOT NULL,
   `name` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+);
 
 insert into assistances (name, description) values ('Troca de aparelho', 'Troca de aparelho decodificador de sinal');
 insert into assistances (name, description) values ('Troca de cabo interno', 'Troca de cabo interno no local da instalação');
